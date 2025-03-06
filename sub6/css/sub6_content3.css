@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/* 입점상담 페이지 */
+.content_area{
+    width: 100%; 
+    margin: 0 auto;
+}
+.content_area .con_cs1{
+    width: 2000px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    background: url(../images/content3/cs.jpg);
+}
+.content_area .con_cs1 p{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    transform: translateY(133px);
+}
+.content_area .con_info{
+    width: 1400px;
+    margin: 100px auto 50px;
+}
+.content_area .con_cs2 p{
+    font-size: 1.875rem;
+    font-weight: 500;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.content_area .cs2_inner{
+    display: flex;
+}
+.content_area .cs2_inner .cir1 {
+    width: 700px;
+    height: 700px;
+    border: 15px solid rgba(3,122,254,.8);
+    border-radius: 50%;
+    transform: translateX(50px);
+    position: relative;
+}
+.content_area .cs2_inner .cir2 {
+    width: 700px;
+    height: 700px;
+    border: 15px solid rgba(153, 205, 0, .8);
+    border-radius: 50%;
+    transform: translateX(-50px);
+    position: relative;
+}
+.content_area .cs2_inner .img1 {
+    position: absolute;
+    top: 260px;
+    left: 245px;
+}
+.content_area .cs2_inner .img2 {
+    position: absolute;
+    top: 408px;
+    left: 202px;
+    height: 30px;
+}
+.content_area .cs2_inner .cir2 img {
+    position: absolute;
+    top: 320px;
+    left: 225px;
+}
+.content_area .con_cs3{
+    margin-top: 100px;
+}
+.content_area .con_cs3 a{
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 15px 0;
+    width: 300px;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    transform: translateX(550px);
+    transition: all .3s ease-out;
+}
+.content_area .con_cs3 a:hover{
+    background: #F6C026;
+    color: #fff;
+}
+/* 메일 탭 */
+
+.mail {
+    display: none;
+}
+
+.mail.active {
+    display: block;
+}
+/* 메일 상담하기 */
+.mail{
+    width: 800px; 
+    margin: 100px auto 200px;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 100px 0;
+    background: rgba(160,211,249,.8);
+}
+
+.mail > p{
+    font-size: 2.5rem; 
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mail div{
+    padding: 10px;
+}
+
+.brd label{
+    font-size: 1.2rem; 
+    font-weight: 500;
+     width: 100px;
+     display: block; 
+     margin-bottom: 10px;
+}
+
+.brd input, .brd textarea{
+    padding: 15px 3%; 
+    width: 90%; 
+    font-size: 1.5rem;
+    border: 0; 
+    background: #fff;
+    border-radius: 10px; 
+    outline: none; 
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,.1); 
+    transition: all .5s;
+}
+.brd textarea{
+    font-size: 1.2rem;
+    height: 200px;
+}
+
+.brd input:focus, .brd textarea:focus{
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,.4); 
+    transform: scale(1.03); 
+    background:#ddf2fa ;
+}     
+.mail_brand {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.mail_brand .brand_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail_brand .brand_txt p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.mail_brand .brand_txt span {
+    font-size: .9rem;
+}
+
+.mail_brand .brand_chk {
+    width: 572px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    background: #fff;
+}
+
+.brand_chk input {
+    width: 50px;
+    height: 20px;
+    padding: 15px 0;
+}
+
+.brand_chk label {
+    font-size: 1.2rem;
+}
+
+.mail button{
+    padding: 15px 50px;
+    font-size: 1.3rem; 
+    border-radius: 15px;
+    border: 0;
+    margin: 30px auto 0;
+    display: block; 
+    cursor: pointer;
+    background: #fff;
+    transition: all .3s ease-out;
+}
+.mail button:hover{
+    background: #F6C026;
+    color: #fff;
+}

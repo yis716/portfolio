@@ -1,0 +1,274 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+    //$userid = $_SESSION['userid'];
+    //$username = $_SESSION['username'];
+    //$usernick = $_SESSION['usernick'];
+    //$userlevel = $_SESSION['userlevel'];
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채용안내-채용절차</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/aos.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content2.css">
+</head>
+<body>
+    <div class="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#gnb">글로벌 네비게이션 바로가기</a>   
+    </div>
+
+    <div class="wrap">
+        <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="비주얼이미지">
+            <strong>채용안내</strong>
+        </div>
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub5_1.html">인재상</a></li>
+                <li><a class="current" href="./sub5_2.html">채용절차</a></li>
+                <li><a href="./sub5_3.html">채용FAQ</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    home > 사업소개 > <strong>채용절차</strong>
+                </div>
+                <h2>채용절차</h2>
+                <p>함께하는 내일, 여러분과의 성장을 기다립니다</p>
+            </div>
+            <div class="content_area">
+                <div class="content_container">
+                    <p>GS리테일은 공정하고 객관적인 채용 절차를 통해 최고의 인재를 확보하기 위해 노력합니다.</p>
+                    <div class="con_nav">
+                        <ul class="tab_menu">
+                            <li><a class="tab active" id="tab1" href="#tab1">신입채용</a></li>
+                            <li><a class="tab" id="tab2" href="#tab2">인턴채용</a></li>
+                            <li><a class="tab" id="tab3" href="#tab3">경력채용</a></li>
+                        </ul>
+                    </div>
+                    <div id="tab1" class="career_newcomer active conlist">
+                        <div class="new_menu">
+                            <ol>
+                                <li class="new"><img src="./images/content2/icon1.png" alt="지원서아이콘"><span>01. 지원서접수</span></li>
+                                <li class="new"><img src="./images/content2/icon2.png" alt="서류아이콘"><span>02. 서류전형</span></li>
+                                <li class="new"><img src="./images/content2/icon3.png" alt="검사아이콘"><span>03. AI역량검사</span></li>
+                                <li class="new"><img src="./images/content2/icon4.png" alt="면접아이콘"><span>04. 1,2차 면접</span></li>
+                                <li class="new"><img src="./images/content2/icon5.png" alt="건강검진아이콘"><span>05. 건강검진</span></li>
+                                <li class="new"><img src="./images/content2/icon6.png" alt="합격아이콘"><span>06. 최종합격</span></li>
+                            </ol>
+                        </div>
+                        <div class="new_txt">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>01. 지원서 접수</dt>
+                                        <dd>- 신입 채용 지원자는 정해진 기간에 채용 홈페이지에 접속하여 온라인 입사지원서를 작성합니다.</dd>
+                                        <dd>- 단, GS리테일 및 자회사의 진행 중인 채용공고 간 중복지원은 불가합니다. (GS그룹의 타 계열사와의 중복지원은 가능합니다.)</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>02. 서류 전형</dt>
+                                        <dd>- 입사지원서 내 지원자의 이력과 자기소개서 등 기재된 내용을 바탕으로, 지원자가 지원한 직무와 GS리테일의 인재상에 부합하는 인재인지를 종합적으로 검증합니다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>03. AI역량검사</dt>
+                                        <dd>- 뇌 과학 기반의 온라인 AI역량검사를 통해 지원자의 직무 적합성과 성장 가능성을 종합적으로 평가합니다.</dd>
+                                        <dd>- 경우에 따라 직무에 맞는 테스트로 대체될 수 있습니다.</dd>
+                                    </dl>
+                                </li>
+                                <li class="txt_exc1">
+                                    <p>04. 1, 2차 면접</p>
+                                    <dl>
+                                        <dt>1&rpar; 1차 면접(실무면접)</dt>
+                                        <dd>- 지원자의 실제 업무 수행능력과 역량을 종합적으로 평가합니다.</dd>
+                                        <dd>- 자기소개서에 기재된 지원자의 경험을 기반으로 인성과 성장 잠재력을 다각적으로 검증합니다.</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>2&rpar; 2차 면접(최종면접)</dt>
+                                        <dd>- 지원자가 지원한 직무와 조직에서의 적합도를 최종적으로 판단합니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>05. 건강검진</dt>
+                                        <dd>- 지원자가 업무를 수행할 수 있는 건강한 상태인지 검진합니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>06. 최종합격</dt>
+                                        <dd>- 모든 전형에 합격한 지원자는 GS리테일의 신입사원으로 입사하게 됩니다. Welcome!</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab2" class="career_intern conlist">
+                        <div class="new_menu">
+                            <ol>
+                                <li class="int"><img src="./images/content2/icon1.png" alt="지원서아이콘"><span>01. 지원서접수</span></li>
+                                <li class="int"><img src="./images/content2/icon2.png" alt="서류아이콘"><span>02. 서류전형</span></li>
+                                <li class="int"><img src="./images/content2/icon3.png" alt="검사아이콘"><span>03. AI역량검사</span></li>
+                                <li class="int"><img src="./images/content2/icon4.png" alt="면접아이콘"><span>04. 1차 면접</span></li>
+                                <li class="int"><img src="./images/content2/icon5.png" alt="건강검진아이콘"><span>05. 건강검진</span></li>
+                                <li class="int"><img src="./images/content2/icon7.png" alt="인턴십아이콘"><span>06. 인턴십</span></li>
+                                <li class="int"><img src="./images/content2/icon4.png" alt="면접아이콘"><span>07. 2차 면접</span></li>
+                                <li class="int"><img src="./images/content2/icon6.png" alt="합격아이콘"><span>08. 최종합격</span></li>
+                            </ol>
+                        </div>
+                        <div class="new_txt">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>01.지원서 접수</dt>
+                                        <dd>- 인턴 채용 지원자는 정해진 기간에 채용 홈페이지에 접속하여 온라인 입사지원서를 작성합니다.</dd>
+                                        <dd>- 단, GS리테일 및 자회사의 진행 중인 채용공고 간 중복지원은 불가합니다. (GS그룹의 타 계열사와의 중복지원은 가능합니다.)</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>02.서류 전형</dt>
+                                        <dd>- 입사지원서 내 지원자의 이력과 자기소개서 등 기재된 내용을 바탕으로, 지원자가 지원한 직무와 GS리테일의 인재상에 부합하는 인재인지를 종합적으로 검증합니다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>03.AI역량검사</dt>
+                                        <dd>- 뇌 과학 기반의 온라인 AI역량검사를 통해 지원자의 직무 적합성과 성장 가능성을 종합적으로 평가합니다.</dd>
+                                        <dd>- 경우에 따라 직무에 맞는 테스트로 대체될 수 있습니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>04. 1차 면접(실무면접)</dt>
+                                        <dd>- 지원자의 실제 업무 수행능력과 역량을 종합적으로 평가합니다.</dd>
+                                        <dd>- 자기소개서에 기재된 지원자의 경험을 기반으로 인성과 성장 잠재력을 다각적으로 검증합니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>05. 건강검진</dt>
+                                        <dd>- 지원자가 업무를 수행할 수 있는 건강한 상태인지 검진합니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>06. 인턴십</dt>
+                                        <dd>- 지원자의 성장 잠재력과 역량을 검증하는 기간에 해당하며, 사업부 별로 직무역량 강화를 위한 교육 프로그램과 현장 체험 근무(OJT)가 진행됩니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>07. 2차면접(임원 면접)</dt>
+                                        <dd>- 인턴십 기간 동안 종합적으로 평가한 지원자의 업무 수행 역량과 조직 적응력, 발전 가능성과 잠재력을 바탕으로, 향후에도 GS리테일과 함께 할 수 있는 인재인지를
+                                            최종
+                                            판단합니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>08. 최종합격</dt>
+                                        <dd>- 모든 전형에 합격한 지원자는 GS리테일의 신입사원으로 입사하게 됩니다. Welcome!</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab3" class="career_positions conlist">
+                        <div class="new_menu">
+                            <ol>
+                                <li class="pos"><img src="./images/content2/icon1.png" alt="지원서아이콘"><span>01. 지원서접수</span></li>
+                                <li class="pos"><img src="./images/content2/icon2.png" alt="서류아이콘"><span>02. 서류전형</span></li>
+                                <li class="pos"><img src="./images/content2/icon4.png" alt="면접아이콘"><span>03. 1,2차 면접</span></li>
+                                <li class="pos"><img src="./images/content2/icon5.png" alt="건강검진아이콘"><span>04. 건강검진</span></li>
+                                <li class="pos"><img src="./images/content2/icon6.png" alt="합격아이콘"><span>05. 최종합격</span></li>
+                            </ol>
+                        </div>
+                        <div class="new_txt">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>01.지원서 접수</dt>
+                                        <dd>- 경력 채용 지원자는 정해진 기간에 채용 홈페이지에 접속하여 온라인 입사지원서를 작성합니다.</dd>
+                                        <dd>- 단, GS리테일 및 자회사의 진행 중인 채용공고 간 중복지원은 불가합니다. (GS그룹의 타 계열사와의 중복지원은 가능합니다.)</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>02.서류 전형</dt>
+                                        <dd>- 입사지원서 내 지원자의 경력사항과 자기소개서 등 기재된 내용을 바탕으로, 지원자가 지원한 직무와 GS리테일의 인재상에 부합하는 인재인지를 종합적으로 검증합니다.
+                                        </dd>
+                                        <dd>- 직무 별로 필요에 따라 지원서 외 포트폴리오 등 자료 제출을 요청 드릴 수 있습니다.</dd>
+                                    </dl>
+                                </li>
+                                <li class="txt_exc2">
+                                    <p>03. 면접전형</p>
+                                    <dl>
+                                        <dt>1차 면접(실무면접)</dt>
+                                        <dd>- 입사지원서에 기재된 경력사항과 자기소개서 등을 바탕으로 지원자의 실제 업무 수행능력과 열정, 역량을 검증합니다.</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>2차 면접(최종면접)</dt>
+                                        <dd>- 지원자가 지원한 직무와 조직에 적합한 인재인지를 최종적으로 판단합니다. 면접 합격 시 GS리테일 근무 조건에 대한 협의를 진행합니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>04. 건강검진</dt>
+                                        <dd>- 지원자가 업무를 수행할 수 있는 건강한 상태인지 검진합니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>06. 최종합격</dt>
+                                        <dd>- 모든 전형에 합격한 지원자는 GS리테일에 입사하게 됩니다. Welcome!</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_career">
+                <img src="./common/images/banner.jpg" alt="채용배너이미지">
+                <div class="career_txt">
+                    <p>대한민국 대표 유통기업 GS리테일은 여러분과 언제나 함께 하겠습니다.</p>
+                    <span>
+                        1971년 창업 이래 고객의 사랑으로 성장한 GS리테일은 앞으로도 변함없이 고객이 원하는 모든 순간,<br>
+                        가장 가까운 곳에서 고객에게 최고의 경험을 선사할 것입니다.
+                    </span>
+                </div>
+            </div>
+        </article>
+        <? include "../common/sub_footer.html" ?>
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/f2fbef274a.js" crossorigin="anonymous"></script>
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/jquery.easing.1.3.js"></script>
+    <script src="../common/js/aos.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="./js/sub5_2tab.js"></script>
+</body>
+</html>

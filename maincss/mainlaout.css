@@ -1,0 +1,808 @@
+@charset "utf-8"; 
+
+
+/*#########################################################################################*/
+/* 비주얼영역 시작*/
+.visual{
+    position: relative; 
+    width: 2000px; height: 1050px;
+    top:0; left:50%; 
+    transform: translateX(-50%);
+    background: #000;
+}
+.gallery{
+    position:relative;
+    left:0; 
+    top:0; 
+    overflow:hidden; 
+    width:2000px; height:1050px;
+}
+.gallery li{
+    display:none; 
+    position: relative;
+}
+.gallery img{
+    animation: ani 30s linear infinite;
+}
+@keyframes ani{
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+.gallery ul li span:nth-of-type(1){
+    position: absolute; 
+    left: 50%; top: 500px;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-family: Lora, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3.89rem;; color:rgb(198, 242, 174); 
+}
+.gallery ul li span:nth-of-type(2){
+    position: absolute; left: 50%; top: 570px;
+    transform: translateX(-50%);
+    /* margin-left: 20px; */
+    opacity: 0;
+    font-weight: 300;
+    font-size: 1.67rem;; color: #fff;
+    letter-spacing: 20px;
+}
+
+/* .gallery .link1 span{ left:  100px; top: 300px;} */
+
+.dock{
+    position:absolute; 
+    width:500px; left:50%; top:900px;
+    transform: translateX(-50%);
+}
+
+.dock .mbutton{ 
+    margin-right:15px; cursor:pointer; 
+    display:block; 
+    float:left; 
+    width:20px; height:12px;
+    background: rgba(255, 255, 255, 0.613); 
+    border-radius:10px;
+    transition: .5s;
+    position: relative;
+    /* animation: btnani 4s linear 1; */
+}
+.dock .mbutton span{
+    display: block; 
+    width: 0px; height: 12px;
+    background: #fff; opacity: .9;
+    position: absolute; left: 0;
+    border-radius: 10px;
+}
+
+.dock .ps{ 
+    margin-right:15px; 
+    margin-top: -5px; 
+    cursor:pointer; 
+    display:block; 
+    float:left; 
+    width:70px; height:40px;
+  
+}
+.dock .ps .stopbtn{
+    display: block; 
+    width: 27px; height: 5px;
+    transition: all 1s;
+    margin: 0 30px;
+    background: #fff;
+    border-radius: 50px;
+}
+.dock .ps .stopbtn:nth-of-type(2){
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    position: absolute; left: 260px; top: 5px;
+}
+.visual .dock .active .stopbtn:nth-of-type(2){
+    width: 23px;
+    transform: rotate(-45deg) translateX(0px) translateY(10px);
+    -webkit-transform: rotate(-45deg) translateX(0px) translateY(10px);
+    
+}
+.dock .ps .stopbtn:nth-of-type(3){
+    position: absolute; left: 240px; top: 5px;
+    opacity: 0;
+}
+.visual .dock .active .stopbtn:nth-of-type(3){
+    width: 30px;
+    transform: translateX(18px);
+    -webkit-transform: translateX(18px);
+    opacity: 1;
+}
+.dock .ps .stopbtn:nth-of-type(4){
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    position: absolute; left: 280px; top: 5px;
+}
+.visual .dock .active .stopbtn:nth-of-type(4){
+    width: 23px;
+    transform: rotate(45deg) translateY(4px) translateX(-16px);
+    -webkit-transform: rotate(45deg) translateY(4px) translateX(-16px);
+}
+.visual .btn{
+    display: block; width: 50px; height: 50px; 
+    /* position: absolute;  top:150px; */
+    cursor:pointer; 
+    color: #fff;
+    transform: translateY(-5px);
+}
+.visual .btn i{
+    transition: all 0.3s ease-out;
+}
+.visual .btnLeft{
+    float: left; 
+    margin-left: 30px;}
+.visual .btnLeft i{
+    font-size: 1.5rem; 
+    margin-left: 0px;
+}
+.visual .btnRight{
+    float: left;
+}
+.visual .btnRight i{
+    font-size: 1.5rem; 
+    margin-left: 0px;
+}    
+
+/*#########################################################################################*/
+/* 본문영역 시작 */
+
+
+
+/* 본문영역 -> IC서비스 2페이지 영역 */
+#content .brand1{
+    width: 2000px; 
+    height:1000px;
+    position: relative; 
+    top:0; 
+    left:50%; 
+    transform: translateX(-50%);
+    background: url(../images/visual7.jpg);
+}
+#content .brand1 .brand1_inner{
+    width: 1400px; 
+    margin: 0 auto; 
+    position: relative;
+    display: flex; 
+    justify-content: space-between;
+}
+#content .brand1 .brand1_inner::after{
+    content: ''; 
+    display: block; 
+    width: 600px;
+    height: 580px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    position: absolute;
+    left: -50px;top: 140px;
+}
+#content .brand1 h3{
+    font-size:2.5rem; 
+    margin:200px 0 40px 0;
+    color: black;
+}
+#content .brand1 h4{
+    font-size:1.5rem; 
+    margin:10px 0 40px 0;
+    color: black;
+}
+#content .brand1 .brand1_left{
+    position: relative;
+    z-index: 10;
+}
+#content .brand1 .brand1_left strong{
+    display: block;
+    font-size:1.5rem; 
+    margin:10px 0 40px 0;
+    color: black;
+}
+#content .brand1 .brand1_left p{
+    font-size: 1.3rem; 
+    color: black; 
+    line-height:2.2rem;
+    margin-right: 150px;
+    text-align: justify;
+}
+#content .brand1 .brand1_right ul{
+    width: 750px;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    margin-top: 150px;
+}
+#content .brand1 .brand1_right li{
+   width:360px; 
+   height: 350px;
+   border: 1px solid rgba(255,255,255,.7); 
+   border-radius: 180px;
+   box-sizing: border-box;
+   background: rgba(255,255,255,.1);
+   box-shadow: 0 0 10px 1px rgba(255,255,255,.3);
+   position: relative; 
+   transition: all .5s ease-out;
+}
+#content .brand1 .brand1_right .b1_1{
+    background: url(../images/3page-1.jpg); 
+    border-radius: 180px; 
+    background-repeat:no-repeat; 
+    background-size: cover;
+}
+#content .brand1 .brand1_right .b1_2{
+    background: url(../images/3page-2.jpg); 
+    border-radius: 180px; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+}
+#content .brand1 .brand1_right .b1_3{
+    background: url(../images/3page-3.jpg); 
+    border-radius: 180px; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+}
+#content .brand1 .brand1_right li:hover{
+    background: rgba(255,255,255,.1); 
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.4);
+}
+#content .brand1 .brand1_right li:nth-of-type(2),
+#content .brand1 .brand1_right li:nth-of-type(4){
+    transform: translateY(150px);
+}
+#content .brand1 li a{
+    width:100%; 
+    height: 100%; 
+    overflow: hidden;
+}
+#content .brand1 li h4{
+    font-size: 1.5rem; 
+    color: #fff;
+    margin: 120px 50px 50px 40px; 
+    transition: all .5s;
+}
+#content .brand1 li:hover h4{
+    transform: scale(1.2) translateX(40px);
+}
+#content .brand1 li span{
+    color:#ffcca8; 
+    transform: translate(20px, 3px);
+    transition: all .5s ease-out;
+}
+#content .brand1 li:hover span{
+    transform: translateX(80px);
+    color: #fff;
+}
+#content .brand1 li p{
+    color: #fff; 
+    margin-left: 50px;
+}
+#content .brand1 .more{
+    color: #ffcca8; 
+    padding: 10px 0;
+    width: 150px; 
+    border-radius: 20px; 
+    margin-top: 50px;
+    border: 2px solid #fff; 
+    text-align: center;
+    background: #fff; 
+    color: #000;  
+    transition: all .5s;
+}
+#content .brand1 .more:hover{
+    color: #fff; 
+    background:rgb(116, 218, 247) ;
+}
+
+/*#########################################################################################*/
+/* 본문영역 -> ICT서비스 3페이지 영역 */
+
+#content .brand2{
+    width: 2000px; 
+    height:1000px;
+    position: relative; 
+    top:0; 
+    left:50%; 
+    transform: translateX(-50%);
+    background: url(../images/visual8.jpg);
+}
+#content .brand2 .brand2_inner{
+    width: 1400px; 
+    margin: 0 auto; 
+    position: relative;
+    display: flex; 
+    justify-content: space-between; 
+    flex-direction: row-reverse;
+}
+#content .brand2 .brand2_inner::after{
+    content: ''; 
+    display: block; 
+    width: 600px;
+    height: 580px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    position: absolute;
+    right: -65px;top: 140px;
+}
+#content .brand2 h3{
+    font-size:2.5rem; 
+    margin:200px 0 40px 0;
+    color: black; 
+    text-align: right;
+}
+#content .brand2 h4{
+    font-size:1.5rem; 
+    margin:10px 0 40px 0;
+    color: #fff;
+}
+#content .brand2 .brand2_left{
+    position: relative; 
+    z-index: 10; 
+    margin-left: 150px;
+}
+#content .brand2 .brand2_left strong{
+    display: block;
+    font-size:1.5rem; 
+    margin:10px 0 40px 0;
+    color: black; 
+    text-align: right;
+}
+#content .brand2 .brand2_left p{
+    font-size: 1.3rem; 
+    color: black; 
+    line-height:2.2rem;
+    text-align:right; 
+    position: relative; right:0
+}
+#content .brand2 .brand2_right ul{
+    width: 750px;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    margin-top: 150px;
+}
+#content .brand2 .brand2_right li{
+    width:360px; 
+    height: 350px;
+    border: 1px solid rgba(255,255,255,.7); 
+    border-radius: 180px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,.1);
+    box-shadow: 0 0 10px 1px rgba(255,255,255,.3);
+    position: relative; 
+    transition: all .5s ease-out;
+}
+#content .brand2 .brand2_right .b2_1{
+    background: url(../images/2page-1.jpg); 
+    border-radius: 180px; 
+    background-repeat:no-repeat; 
+    background-size: cover;
+}
+#content .brand2 .brand2_right .b2_2{
+    background: url(../images/2page-2.jpg); 
+    border-radius: 180px; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+}
+#content .brand2 .brand2_right .b2_3{
+    background: url(../images/2page-3.jpg); 
+    border-radius: 180px; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+}
+#content .brand2 .brand2_right li:hover{
+    background: rgba(255,255,255,.1); 
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.4);
+}
+#content .brand2 .brand2_right li:nth-of-type(2),
+#content .brand2 .brand2_right li:nth-of-type(4){
+    transform: translateY(150px);
+}
+#content .brand2 li a{
+    width:100%; 
+    height: 100%; 
+    overflow: hidden;
+}
+#content .brand2 li img{
+    position: absolute; 
+    left:50%; 
+    top:150px;
+    transform: translateX(-50%); 
+    opacity: 1; 
+    transition: all .5s ease-out;
+}
+#content .brand2 li h4{
+    font-size: 1.5rem; 
+    color: #fff;
+    margin: 120px 50px 50px 40px;
+    transition: all .5s;
+}
+#content .brand2 li:hover h4{
+    transform: scale(1.2) translateX(40px);
+}
+#content .brand2 li span{
+    color:#ffcca8; 
+    transform: translate(20px, 3px);
+    transition: all .5s ease-out;
+}
+#content .brand2 li:hover span{
+    transform: translateX(80px);
+    color: #fff;
+}
+#content .brand2 li p{
+    color: #fff; 
+    margin-left: 50px;
+}
+#content .brand2 .more{
+    color: #ffcca8; 
+    padding: 10px 0;
+    width: 150px; 
+    border-radius: 20px; 
+    margin-top: 50px;
+    float: right;
+    border: 2px solid #fff; 
+    text-align: center;
+    background: #fff; 
+    color: #000;  
+    transition: all .5s;
+}
+#content .brand2 .more:hover{
+    color: #fff; 
+    background:rgb(116, 218, 247);
+}
+
+
+/*#########################################################################################*/
+/* 본문영역 4페이지 -> 보안이슈 메인 영역 */
+
+#content .issue{
+    width: 2000px; 
+    height:900px;
+    position: relative; 
+    top:0; 
+    left:50%; 
+    transform: translateX(-50%);
+    background:rgb(239, 239, 239);
+    background:#fff;
+    padding: 100px 0;
+}  
+#content .issue .issue_top{
+    overflow: hidden;
+}
+#content .issue .issue_top h3{
+    font-size: 3rem; 
+    text-align: center; 
+    margin-bottom: 30px;
+}
+#content .issue .issue_top p{
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 50px;
+}
+#content .issue .issue_title{
+    position:relative; 
+    margin-top: 47px; 
+}
+#content .issue .issue_title li{
+    width:300px; 
+    height: 510px; 
+    box-sizing: border-box; 
+    padding: 15px;
+    background: #fff; 
+    box-shadow: 1px 1px 15px 1px rgba(0,0,0,.3); 
+    position: relative;
+}
+#content .issue .phone{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    border-radius: 60px;
+    transform: translateX(-50%);
+    z-index: 10;}
+
+#content .issue .issue_title li img{
+    width: 100%; 
+    height:200px; 
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 20px; 
+    margin-bottom: 20px;
+}
+#content .issue .issue_title li strong{
+    display: block; 
+    font-size: 1.2rem; 
+    margin-bottom: 10px;
+}
+#content .issue .issue_title li p{
+    text-align: justify; 
+    line-height: 1.5rem; 
+    font-size: 1rem;
+}
+#content .issue .issue_title li a{
+    position: absolute; 
+    right: 15px; 
+    bottom: 15px;
+}
+#content .issue .issue_title li a:hover{
+   color: #651AA9;
+   transform: scale(1.1)
+}
+#content .issue .swiper1{
+    width:1660px; 
+    z-index: 20;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#content .issue .swiper1::before{    
+    content: '';
+    display: block;
+    width: 24px;
+    height: 554px;
+    background: url(../images/p-left.png);
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    z-index: 40;
+    margin-left: -175px;
+}
+#content .issue .swiper1::after{    
+    content: '';
+    display: block;
+    width: 24px;
+    height: 554px;
+    background: url(../images/p-right.png);
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    z-index: 40;
+    margin-left: 151px;
+}
+#content .issue .swiper1 .swiper-slide{
+    width: 300px;
+}
+
+
+/*#########################################################################################*/
+/* 본문영역 5페이지 -> 보안솔루션 메인 영역 */
+
+#content .movie{
+    width: 2000px; 
+    position: relative; 
+    padding: 100px 0;
+    top:0; 
+    left:50%; 
+    transform: translateX(-50%);
+    background: url(../images/issue-1.jpg);
+}
+#content .movie .movie_top{
+    overflow: hidden; 
+    margin-bottom: 180px;
+}
+#content .movie .movie_top h3{
+    font-size: 3rem; 
+    text-align: center; 
+    margin-bottom: 30px;
+}
+#content .movie .movie_top p{
+    font-size: 2rem; 
+    text-align: center;
+}
+#content .movie .movie_title{
+    width: 1200px;
+    margin: 0 auto;
+}
+#content .movie .movie_title video{
+    width: 100%; 
+    border: 30px solid #fff; 
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px 1px rgba(0,0,0,.2);
+}
+#content .movie .btn_more{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -75px;
+    padding: 10px 0 14px; 
+    border-radius: 20px;
+    background: rgb(134, 229, 255); 
+    width: 150px; 
+    text-align: center; 
+    transition: all .5s;
+}
+#content .movie .btn_more span{
+    transform: translateY(5px);
+}
+#content .movie .btn_more:hover{
+   background:  #651AA9; color: #fff;
+}
+#content .box1 h3{color: white;}
+
+/*#########################################################################################*/
+/* 본문영역 6페이지 -> 노티스 메인 영역 */
+
+#content .notice{
+    background:#fff;
+    background: #f8f8f8;
+    position: relative; padding: 100px 0;
+}
+#content .con_container{
+    width: 1400px;
+    margin: 0 auto;
+}
+#content .notice h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+#content .notice ul{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px;
+}
+#content .notice li{
+    transition: all .5s ease-out;
+    border-radius: 40px; 
+    overflow: hidden;
+}
+#content .notice li:hover{
+    box-shadow: 0 0 15px 1px rgba(0,0,0,.5); 
+    transform: scale(1.02);
+}
+#content .notice h3+p{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#content .notice dt::after{
+    display: block;
+    content: "";
+    width: 50px; height: 20px;
+    background:rgb(134, 229, 255);
+    position: absolute;
+    right: 50px; bottom: 0;
+    transition: all .2s;
+    border-radius: 50% 50% 49% 51% / 100% 100% 0% 0%;
+}
+#content .notice dl:hover dt::after{
+    transform: scaleY(5);
+    background: #651AA9;
+}
+#content .notice>ul{
+    position: relative;
+    left: auto;
+    top: 260px;
+}
+#content .notice p{
+    margin-bottom: 20px;
+}
+#content .notice dl span{
+    color: #999;
+}
+#content .notice dl{
+    position: relative;
+    width: 575px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: all .2s ease-out;
+}
+#content .notice dl:hover{
+    border-radius: 0;
+}
+#content .notice dt{
+    font-size: 1.33em;
+    font-weight: bold;
+    margin: 40px;
+}
+#content .notice dd{
+    margin: 0 40px 0 40px ;
+}
+#content .notice .btn_more{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: 440px;
+    padding: 10px 0 14px; 
+    border-radius: 20px;
+    background: rgb(134, 229, 255); 
+    width: 150px; 
+    text-align: center; 
+    transition: all .5s;
+}
+#content .notice .btn_more span{
+    transform: translateY(5px);
+}
+#content .notice .btn_more:hover{
+   background: #651AA9; color: #fff;
+}
+
+/*#########################################################################################*/
+/* 본문영역 7페이지 -> 문의하기 메인 영역 */
+
+#content .contact{
+    width: 2000px; 
+    height:1030px;
+    position: relative; 
+    top:0; 
+    left:50%; 
+    transform: translateX(-50%);
+    background-color: #f8f8f8;
+    background-color: #fff;
+    padding: 100px 0;
+
+}
+#content .contact h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#content .contact_inner1{
+    width: 1400px;
+    margin: 0 auto;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+#content .contact_inner1 form{
+    width: 600px;
+}
+#content .contact_inner1 label{
+    display: block; 
+    font-size: 1.2rem; 
+    margin-bottom: 10px;
+}
+#content .contact_inner1 label span{
+    font-size: 1.3rem; 
+    color: #f00;
+}
+#content .contact_inner1 input{
+    border: 0; outline: none; 
+    background: #e8e8e8; 
+    padding:15px; 
+    width: 100%; 
+    font-size: 1.3rem; 
+    border-radius: 15px;
+    display: block; 
+    margin-bottom: 15px;
+}
+#content .contact_inner1 img{
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+#content .contact_inner1 button{
+    font-size: 1.1rem;
+    padding: 35px 50px;
+    border-radius: 15px;
+    border: 0; 
+    background: #f8f8f8 url(../images/send1.png) center top 15px ; 
+    background-repeat:no-repeat; 
+    background-size: 60px;
+    color: #fff; 
+    cursor: pointer;
+    transform: translate(250px, 10px);
+    transition: all .5s;
+}
+#content .contact_inner1 button:hover{
+    background:  #651AA9 url(../images/send2.png) center top 3px;  
+    background-repeat:no-repeat; 
+    background-size: 75px;
+    color: #fff;
+ }
+ 
+#message{
+    width: 620px;
+    height: 150px;
+    font-size: 20px;
+ }
+
+ 
+/*#########################################################################################*/
+/*  */

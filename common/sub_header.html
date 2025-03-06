@@ -1,0 +1,75 @@
+<header id="headerArea">
+    <div class="header_inner">
+        <h1 class="logo"><a href="../index.html">GS리테일로고</a></h1>
+        <nav id="gnb">
+            <h2 class="hidden">글로벌네비게이션</h2>
+            <ul class="dropdownmenu">
+                <li class="m1 menu">
+                    <h3><a class="depth1" href="../sub1/sub1_1.html">회사소개</a></h3>
+                    <ul>
+                        <li><a href="../sub1/sub1_1.html">경영이념</a></li>
+                        <li><a href="../sub1/sub1_2.html">CEO인사말</a></li>
+                        <li><a href="../sub1/sub1_3.html">기업연혁</a></li>
+                        <li><a href="../sub1/sub1_4.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="m2 menu">
+                    <h3><a class="depth1" href="../sub2/sub2_1.html">사업소개</a></h3>
+                    <ul>
+                        <li><a href="../sub2/sub2_1.html">GS25</a></li>
+                        <li><a href="../sub2/sub2_2.html">GS THE FRESH</a></li>
+                        <li><a href="../sub2/sub2_3.html">GS SHOP</a></li>
+                        <li><a href="../sub2/sub2_4.html">GS Pay</a></li>
+                    </ul>
+                </li>
+                <li class="m3 menu">
+                    <h3><a class="depth1" href="../sub3/sub3_1.html">기업경영</a></h3>
+                    <ul>
+                        <li><a href="../sub3/sub3_1.html">ESG전략</a></li>
+                        <li><a href="../sub3/sub3_2.html">E(환경경영)</a></li>
+                        <li><a href="../sub3/sub3_3.html">S(사회책임)</a></li>
+                        <li><a href="../sub3/sub3_4.html">G(기업지배구조)</a></li>
+                    </ul>
+                </li>
+                <li class="m4 menu">
+                    <h3><a class="depth1" href="../sub4/sub4_1.html">투자정보</a></h3>
+                    <ul>
+                        <li><a href="../sub4/sub4_1.html">재무현황</a></li>
+                        <li><a href="../sub4/sub4_2.html">정책제도정보</a></li>
+                    </ul>
+                </li>
+                <li class="m5 menu">
+                    <h3><a class="depth1" href="../sub5/sub5_1.html">채용안내</a></h3>
+                    <ul>
+                        <li><a href="../sub5/sub5_1.html">인재상</a></li>
+                        <li><a href="../sub5/sub5_2.html">채용절차</a></li>
+                        <li><a href="../sub5/sub5_3.html">채용FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="m6 menu">
+                    <h3><a class="depth1" href="../greet/list.php">미디어</a></h3>
+                    <ul>
+                        <li><a href="../greet/list.php">공지사항</a></li>
+                        <li><a href="../press/list.php">보도자료</a></li>
+                        <!-- <li><a href="../sub6/sub6_1.html">공지사항</a></li> -->
+                        <li><a href="../sub6/sub6_2.html">뉴스룸</a></li>
+                        <li><a href="../sub6/sub6_3.html">입점상담</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <ul class="top_menu">
+            <? if(!$userid){ // 로그인이 안 된 상태? ?>
+            
+            <li><a href="../login/login_form.php">로그인</a></li>
+            <li><a href="../member/member_check.html">회원가입</a></li>
+            
+            <? } else { // 로그인이 된 상태? ?>
+            
+            <li><a href="../login/logout.php">로그아웃</a></li>
+            <li><a href="../member/member_form_modify.php">정보수정</a></li>
+            
+            <? } ?>
+        </ul>
+    </div>
+</header>
